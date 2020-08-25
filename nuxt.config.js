@@ -96,7 +96,7 @@ export default {
       ssr: false
     },
     {
-      src: '~plugins/vue-observable.js',
+      src: '~/plugins/vue-plyr.js',
       ssr: false
     }
   ],
@@ -112,7 +112,7 @@ export default {
    */
   modules: ['@nuxtjs/google-gtag'],
   'google-gtag': {
-    id: 'UA-6029148-3',
+    id: 'UA-176404676-1',
     config: {
       anonymize_ip: true, // anonymize IP
       page_title: POSTCONFIG.title,

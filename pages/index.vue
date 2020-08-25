@@ -1,7 +1,19 @@
 <template>
   <div>
-    <main class="mw8 ph3">
-      <article class="measure-wide center">
+    <main class="mw8 center">
+      <vue-plyr :options="{ controls: ['play-large', 'pip'] }">
+        <div class="plyr__video-embed">
+          <iframe
+            :src="
+              `https://www.youtube.com/embed/${articleData.trailervideoid}?iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1`
+            "
+            allowfullscreen
+            allowtransparency
+            allow="autoplay"
+          />
+        </div>
+      </vue-plyr>
+      <article class="measure-wide center ph3">
         <h2 class="lh-title ttu londrina-solid red">About</h2>
         <div class="lh-copy" v-html="articleData.about.text" />
         <h2 class="lh-title ttu londrina-solid red">Screenings</h2>
@@ -23,9 +35,9 @@
             <div class="flex flex-column flex-row-ns">
               <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
                 <img
-                  :src="team.photo"
-                  class="db"
-                  alt="Photo of a dimly lit room with a computer interface terminal."
+                  :data-src="team.photo"
+                  class="db lazyload"
+                  :alt="`${team.name} Photo`"
                 />
               </div>
               <div class="w-100 w-60-ns pl3-ns">
@@ -36,12 +48,6 @@
               </div>
             </div>
           </article>
-          <!-- <li
-            :key="`${i}-${team.name}`"
-            class="flex flex-row-ns justify-around-ns items-center flex-column justify-center lh-copy pv3 ba bl-0 bt-0 br-0 b--solid b--red"
-          >
-            <span class="db"> {{ team.name }} </span>
-          </li> -->
         </template>
       </article>
       <ShareContainer
@@ -88,4 +94,30 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss">
+@import '~@/node_modules/plyr/dist/plyr.css';
+@import '~@/assets/css/variables';
+.plyr--full-ui input[type='range'] {
+  // -webkit-appearance: none;
+  // background: 0 0;
+  // border: 0;
+  // border-radius: 26px;
+  color: $red;
+  // display: block;
+  // height: 19px;
+  // margin: 0;
+  // padding: 0;
+  // transition: box-shadow .3s ease;
+  // width: 100%;
+}
+.plyr--audio .plyr__control.plyr__tab-focus,
+.plyr--audio,
+.plyr--video,
+.plyr--audio .plyr__control:hover,
+.plyr--audio .plyr__control[aria-expanded='true'],
+.plyr--video .plyr__control:hover,
+.plyr--video .plyr__control[aria-expanded='true'],
+.plyr__control--overlaid {
+  background: $red;
+}
+</style>
