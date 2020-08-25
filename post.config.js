@@ -1,6 +1,6 @@
 module.exports = {
-  baseURL: process.env.BASE_URL_PRODUCTION || '/static-nuxt-template',
-  title: 'Static Template Title',
+  baseURL: process.env.BASE_URL_PRODUCTION || '/unadopted',
+  title: 'UNADOPTED',
   author: 'Static Author',
   publishDate: 'Oct. 2, 2019',
   location: 'Oakland, CA',
@@ -19,8 +19,8 @@ module.exports = {
   twitterHandler: '@itsyrmedia',
   docs: [
     {
-      name: 'Test doc',
-      id: '1OCn6AQNVkgJ_4jHLFQOwIxvCDaxvZ-7XnZLbHHL0bOQ'
+      name: 'UNADOPTED - backend',
+      id: '1qUd17kRsC9iv2c2xJtY6qi487c-8MwlfqxoDKRBGmHc'
     }
   ],
   dataPath: 'data/data.json'
