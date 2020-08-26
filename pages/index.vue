@@ -4,13 +4,16 @@
       <vue-plyr :options="{ controls: ['play-large', 'pip'] }">
         <div class="plyr__video-embed">
           <iframe
+            class="db w-100"
             :src="
-              `https://www.youtube.com/embed/${articleData.trailervideoid}?iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1`
+              `https://www.youtube-nocookie.com/embed/${articleData.trailervideoid}?controls=0&iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1`
             "
+            :data-poster="articleData.trailerposter"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
             allowtransparency
-            allow="autoplay"
-          />
+          ></iframe>
         </div>
       </vue-plyr>
       <article class="measure-wide center ph3">
@@ -119,5 +122,8 @@ export default {
 .plyr--video .plyr__control[aria-expanded='true'],
 .plyr__control--overlaid {
   background: $red;
+}
+.plyr__poster {
+  background-size: cover;
 }
 </style>
