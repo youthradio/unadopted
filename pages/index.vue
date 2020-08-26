@@ -1,6 +1,7 @@
 <template>
   <div>
     <main class="mw8 center">
+      <MainLogo />
       <vue-plyr :options="{ controls: ['play-large', 'pip'] }">
         <div class="plyr__video-embed">
           <iframe
@@ -67,10 +68,12 @@ import POSTCONFIG from '../post.config'
 import CommonUtils from '../mixins/CommonUtils'
 import ArticleData from '../data/data.json'
 import ShareContainer from '~/components/Custom/ShareContainer'
+import MainLogo from '~/components_local/MainLogo'
 
 export default {
   components: {
-    ShareContainer
+    ShareContainer,
+    MainLogo
   },
   mixins: [CommonUtils],
   asyncData(ctx) {
