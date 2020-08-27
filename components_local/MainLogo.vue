@@ -2,7 +2,7 @@
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
-    width="353"
+    width="30%"
     viewBox="0 0 353 100"
     class=""
   >
