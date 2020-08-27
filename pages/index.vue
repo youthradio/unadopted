@@ -19,7 +19,7 @@
       </vue-plyr>
       <article class="measure-wide center ph3">
         <h2 id="about" class="lh-title ttu londrina-solid red pt4">About</h2>
-        <div class="f6 f5-l lh-copy" v-html="articleData.about.text" />
+        <div class="f6 f5-ns lh-copy" v-html="articleData.about.text" />
 
         <h2 id="screenings" class="lh-title ttu londrina-solid red pt4">
           Screenings
@@ -54,7 +54,7 @@
                 <h2 class="mt0 lh-title londrina-solid red">
                   {{ team.name }}
                 </h2>
-                <div class="f6 f5-l lh-copy" v-html="team.text"></div>
+                <div class="f6 f5-ns lh-copy" v-html="team.text"></div>
               </div>
             </div>
           </article>
@@ -63,7 +63,7 @@
         <h2 id="contact" class="lh-title ttu londrina-solid red pt4">
           Contact
         </h2>
-        <div class="f6 f5-l lh-copy pb4" v-html="articleData.contact.text" />
+        <div class="f6 f5-ns lh-copy pb4" v-html="articleData.contact.text" />
       </article>
     </main>
     <Footer />
