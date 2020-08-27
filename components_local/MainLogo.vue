@@ -4,7 +4,7 @@
     fill="none"
     width="353"
     viewBox="0 0 353 100"
-    class="db"
+    class=""
   >
     <defs />
     <path

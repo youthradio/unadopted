@@ -1,7 +1,17 @@
 <template>
   <div>
     <main class="mw8 center">
-      <MainLogo />
+      <header>
+        <ul class="nested-list-reset">
+          <li>ABOUT THE FILM</li>
+          <li>SCREENINGS</li>
+          <li class="li-logo">
+            <MainLogo />
+          </li>
+          <li>MEET THE TEAM</li>
+          <li>CONTACT</li>
+        </ul>
+      </header>
       <vue-plyr id="trailer" :options="{ controls: ['play-large', 'pip'] }">
         <div class="plyr__video-embed">
           <iframe
@@ -132,6 +142,16 @@ export default {
 .plyr--video .plyr__control[aria-expanded='true'],
 .plyr__control--overlaid {
   background: $red;
+}
+.nested-list-reset {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  background-color: black;
+  li {
+    display: inline;
+    color: white;
+  }
 }
 .plyr__poster {
   background-size: cover;
