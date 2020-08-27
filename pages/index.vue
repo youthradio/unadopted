@@ -2,7 +2,7 @@
   <div>
     <main class="mw8 center">
       <MainLogo />
-      <vue-plyr :options="{ controls: ['play-large', 'pip'] }">
+      <vue-plyr id="trailer" :options="{ controls: ['play-large', 'pip'] }">
         <div class="plyr__video-embed">
           <iframe
             class="db w-100"
@@ -46,7 +46,7 @@
               <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
                 <img
                   :data-src="team.photo"
-                  class="db lazyload w-100"
+                  class="db lazyload w-100 mw5"
                   :alt="`${team.name} Photo`"
                 />
               </div>
