@@ -18,9 +18,12 @@
         </div>
       </vue-plyr>
       <article class="measure-wide center ph3">
-        <h2 class="lh-title ttu londrina-solid red">About</h2>
-        <div class="lh-copy" v-html="articleData.about.text" />
-        <h2 class="lh-title ttu londrina-solid red">Screenings</h2>
+        <h2 id="about" class="lh-title ttu londrina-solid red pt4">About</h2>
+        <div class="f6 f5-l lh-copy" v-html="articleData.about.text" />
+
+        <h2 id="screenings" class="lh-title ttu londrina-solid red pt4">
+          Screenings
+        </h2>
         <ul class="list mh0 pl0">
           <template v-for="(screening, i) in articleData.screenings">
             <li
@@ -33,14 +36,17 @@
             </li>
           </template>
         </ul>
-        <h2 class="lh-title ttu londrina-solid red">Meet the Team</h2>
+
+        <h2 id="team" class="lh-title ttu londrina-solid red pt4">
+          Meet the Team
+        </h2>
         <template v-for="(team, i) in articleData.team">
           <article :key="`${i}-${team.name}`">
-            <div class="flex flex-column flex-row-ns">
+            <div class="flex flex-column flex-row-ns pb4">
               <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
                 <img
                   :data-src="team.photo"
-                  class="db lazyload"
+                  class="db lazyload w-100"
                   :alt="`${team.name} Photo`"
                 />
               </div>
@@ -53,13 +59,14 @@
             </div>
           </article>
         </template>
+
+        <h2 id="contact" class="lh-title ttu londrina-solid red pt4">
+          Contact
+        </h2>
+        <div class="f6 f5-l lh-copy pb4" v-html="articleData.contact.text" />
       </article>
-      <ShareContainer
-        :title="postData.title"
-        :description="postData.summary"
-        class="mv3"
-      />
     </main>
+    <Footer />
   </div>
 </template>
 
@@ -67,13 +74,13 @@
 import POSTCONFIG from '../post.config'
 import CommonUtils from '../mixins/CommonUtils'
 import ArticleData from '../data/data.json'
-import ShareContainer from '~/components/Custom/ShareContainer'
 import MainLogo from '~/components_local/MainLogo'
+import Footer from '~/components_local/Footer'
 
 export default {
   components: {
-    ShareContainer,
-    MainLogo
+    MainLogo,
+    Footer
   },
   mixins: [CommonUtils],
   asyncData(ctx) {
