@@ -2,9 +2,9 @@
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
-    width="100%"
+    width="353"
     viewBox="0 0 353 100"
-    class=""
+    class="db w-100"
   >
     <defs />
     <path

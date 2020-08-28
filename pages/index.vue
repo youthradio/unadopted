@@ -1,32 +1,10 @@
 <template>
   <div>
+    <Header
+      :videoid="articleData.trailervideoid"
+      :poster="articleData.trailerposter"
+    />
     <main class="mw8 center">
-      <nav class="nested-list-reset">
-        <a>ABOUT THE FILM</a>
-        <a>SCREENINGS</a>
-        <div class="li-container">
-          <div class="logo">
-            <MainLogo />
-          </div>
-        </div>
-        <a>MEET THE TEAM</a>
-        <a>CONTACT</a>
-      </nav>
-      <vue-plyr id="trailer" :options="{ controls: ['play-large', 'pip'] }">
-        <div class="plyr__video-embed">
-          <iframe
-            class="db w-100"
-            :src="
-              `https://www.youtube-nocookie.com/embed/${articleData.trailervideoid}?controls=0&iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1`
-            "
-            :data-poster="articleData.trailerposter"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            allowtransparency
-          ></iframe>
-        </div>
-      </vue-plyr>
       <article class="measure-wide center ph3">
         <h2 id="about" class="lh-title ttu londrina-solid red pt4">About</h2>
         <div class="f6 f5-ns lh-copy" v-html="articleData.about.text" />
@@ -84,13 +62,13 @@
 import POSTCONFIG from '../post.config'
 import CommonUtils from '../mixins/CommonUtils'
 import ArticleData from '../data/data.json'
-import MainLogo from '~/components_local/MainLogo'
 import Footer from '~/components_local/Footer'
+import Header from '~/components_local/Header'
 
 export default {
   components: {
-    MainLogo,
-    Footer
+    Footer,
+    Header
   },
   mixins: [CommonUtils],
   asyncData(ctx) {
@@ -117,58 +95,4 @@ export default {
 }
 </script>
 
-<style lang="scss">
-@import '~@/node_modules/plyr/dist/plyr.css';
-@import '~@/assets/css/variables';
-.plyr--full-ui input[type='range'] {
-  // -webkit-appearance: none;
-  // background: 0 0;
-  // border: 0;
-  // border-radius: 26px;
-  color: $red;
-  // display: block;
-  // height: 19px;
-  // margin: 0;
-  // padding: 0;
-  // transition: box-shadow .3s ease;
-  // width: 100%;
-}
-.plyr--audio .plyr__control.plyr__tab-focus,
-.plyr--audio,
-.plyr--video,
-.plyr--audio .plyr__control:hover,
-.plyr--audio .plyr__control[aria-expanded='true'],
-.plyr--video .plyr__control:hover,
-.plyr--video .plyr__control[aria-expanded='true'],
-.plyr__control--overlaid {
-  background: $red;
-}
-.nested-list-reset {
-  display: flex;
-  width: 100%;
-  height: 8rem;
-  padding: 0;
-  margin: 0;
-
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-
-  z-index: 100;
-  a {
-    margin: 0 auto;
-    color: white;
-  }
-}
-.logo {
-  width: 100%;
-}
-.li-container {
-  padding: 6rem 1rem 1rem 1rem;
-  background-color: black;
-  z-index: 100;
-}
-.plyr__poster {
-  background-size: cover;
-}
-</style>
+<style></style>
