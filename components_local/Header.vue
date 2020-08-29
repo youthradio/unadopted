@@ -1,6 +1,5 @@
 <template>
-  <header class="w-100 grid f7 f6-ns">
-    <div class="w-100 h-100 bg-black background-row"></div>
+  <header class="w-100 grid f7 f6-ns bg-black">
     <div
       class="dn flex-ns flex-wrap justify-around items-center row-1 grid-col-1 mv3"
     >
@@ -96,11 +95,6 @@ export default {
 }
 .video {
   grid-row: 3;
-  grid-column: 1 / span 12;
-}
-
-.background-row {
-  grid-row: 1 / span 2;
   grid-column: 1 / span 12;
 }
 
