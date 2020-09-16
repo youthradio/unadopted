@@ -1,14 +1,15 @@
 <template>
-  <header class="w-100 grid f7 f6-ns bg-black">
+  <header class="w-100 grid f7 f6-ns bg-black ttu">
     <div
       class="dn flex-ns flex-wrap justify-around items-center row-1 grid-col-1 mv3"
     >
-      <a class="link db grow white no-underline ph2 pv2" href="#about"
-        >ABOUT THE FILM</a
+      <a class="link db grow white no-underline ph2 pv2" href="#about">ABOUT</a>
+      <a class="link db grow white no-underline ph2 pv2" href="#team"
+        >MEET THE TEAM</a
       >
-      <a class="link db grow white no-underline ph2 pv2" href="#screenings"
+      <!-- <a class="link db grow white no-underline ph2 pv2" href="#screenings"
         >SCREENINGS</a
-      >
+      > -->
     </div>
 
     <div class="row-span grid-col-2 center z-2 pointer-events-none">
@@ -19,9 +20,16 @@
     <div
       class="dn flex-ns flex-wrap justify-around items-center row-1 grid-col-3 mv3"
     >
-      <a class="link db grow white no-underline ph2 pv2" href="#team"
-        >MEET THE TEAM</a
-      >
+      <li class="pb3">
+        <a
+          class="link db grow white no-underline ph2 pv2"
+          target="_blank"
+          rel="nofollow"
+          href="https://yr.media/search/foster+care"
+        >
+          Foster Care Coverage
+        </a>
+      </li>
       <a class="link db grow white no-underline ph2 pv2" href="#contact"
         >CONTACT</a
       >

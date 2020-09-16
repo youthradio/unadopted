@@ -74,17 +74,27 @@
         </li>
         <li class="pb2">
           <a class="white no-underline grow dib" href="#about">
-            About The Film
+            About
           </a>
         </li>
-        <li class="pb0">
+        <!-- <li class="pb0">
           <a class="white no-underline grow dib" href="#screenings">
             Screenings
           </a>
-        </li>
+        </li> -->
         <li class="pb2">
           <a class="white no-underline grow dib" href="#team">
             Meet the Team
+          </a>
+        </li>
+        <li class="pb2">
+          <a
+            class="white no-underline grow dib"
+            target="_blank"
+            rel="nofollow"
+            href="https://yr.media/search/foster+care"
+          >
+            Foster Care Coverage
           </a>
         </li>
         <li class="pb2">

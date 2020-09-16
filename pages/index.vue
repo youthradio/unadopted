@@ -9,7 +9,7 @@
         <h2 id="about" class="lh-title ttu londrina-solid red pt4">About</h2>
         <div class="f6 f5-ns lh-copy" v-html="articleData.about.text" />
 
-        <h2 id="screenings" class="lh-title ttu londrina-solid red pt4">
+        <!-- <h2 id="screenings" class="lh-title ttu londrina-solid red pt4">
           Screenings
         </h2>
         <ul class="list mh0 pl0">
@@ -23,30 +23,32 @@
               <span class="db"> {{ toLocaleDate(screening.date) }}</span>
             </li>
           </template>
-        </ul>
+        </ul> -->
 
         <h2 id="team" class="lh-title ttu londrina-solid red pt4">
           Meet the Team
         </h2>
-        <template v-for="(team, i) in articleData.team">
-          <article :key="`${i}-${team.name}`">
-            <div class="flex flex-column flex-row-ns pb4">
-              <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-                <img
-                  :data-src="team.photo"
-                  class="db lazyload w-100 mw5"
-                  :alt="`${team.name} Photo`"
-                />
-              </div>
-              <div class="w-100 w-60-ns pl3-ns">
-                <h2 class="mt0 lh-title londrina-solid red">
-                  {{ team.name }}
-                </h2>
-                <div class="f6 f5-ns lh-copy" v-html="team.text"></div>
+        <div class="flex flex-wrap nl2-ns nr3-ns">
+          <template v-for="(team, i) in articleData.team">
+            <div :key="`${i}-${team.name}`" class="w-33-ns w-100">
+              <div class="flex flex-column pb4 ph2-ns">
+                <div class="">
+                  <img
+                    :data-src="team.photo"
+                    class="db lazyload w-100"
+                    :alt="`${team.name} Photo`"
+                  />
+                </div>
+                <div class="">
+                  <h2 class="mt0 lh-title londrina-solid red">
+                    {{ team.name }}
+                  </h2>
+                  <div class="f6 f5-ns lh-copy" v-html="team.text"></div>
+                </div>
               </div>
             </div>
-          </article>
-        </template>
+          </template>
+        </div>
 
         <h2 id="contact" class="lh-title ttu londrina-solid red pt4">
           Contact
