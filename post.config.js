@@ -7,7 +7,7 @@ module.exports = {
   description: 'UNADOPTED Documentary',
   summary: 'UNADOPTED Documentary ',
   url: 'https://youthradio.github.io/unadopted',
-  featureImage: 'https://youthradio.github.io/unadopted/thumbnail.jpg',
+  featureImage: 'https://youthradio.github.io/unadopted/unadopted_meta-img.jpg',
   featureImagePath: 'images/template-feature-image',
   featureImageDescription: 'Woman looking at kiosk.',
   featureImageCaption: '(Photo: Andersen Ross Photography Inc/Getty Images)',
