@@ -5,7 +5,7 @@
         <p>Follow Us on Social</p>
         <a
           class="link near-black dib mr2 grow"
-          href="https://facebook.com"
+          href="https://www.facebook.com/unadoptedfilm"
           title="Facebook"
         >
           <svg
@@ -26,7 +26,7 @@
         </a>
         <a
           class="link grow near-black dib mr2"
-          href="https://instagram.com/mrmrs_"
+          href="https://www.instagram.com/unadoptedfilm/"
           title="Instagram"
         >
           <svg
@@ -46,7 +46,7 @@
         </a>
         <a
           class="link grow near-black dib mr2"
-          href="https://twitter.com/mrmrs_"
+          href="https://twitter.com/UnadoptedFilm"
           title="Twitter"
         >
           <svg
