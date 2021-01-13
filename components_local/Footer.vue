@@ -68,14 +68,10 @@
       </div>
       <ul class="list pl0 ml0 w-100 w-auto-ns">
         <li class="pb2">
-          <a class="white no-underline grow dib" href="#trailer">
-            Trailer
-          </a>
+          <a class="white no-underline grow dib" href="#trailer"> Trailer </a>
         </li>
         <li class="pb2">
-          <a class="white no-underline grow dib" href="#about">
-            About
-          </a>
+          <a class="white no-underline grow dib" href="#about"> About </a>
         </li>
         <!-- <li class="pb0">
           <a class="white no-underline grow dib" href="#screenings">
@@ -92,20 +88,18 @@
             class="white no-underline grow dib"
             target="_blank"
             rel="nofollow"
-            href="https://yr.media/search/foster+care"
+            href="https://yr.media/tag/foster-care/"
           >
             Our Foster Care Coverage
           </a>
         </li>
         <li class="pb2">
-          <a class="white no-underline grow dib" href="#contact">
-            Contact
-          </a>
+          <a class="white no-underline grow dib" href="#contact"> Contact </a>
         </li>
       </ul>
       <div class="tr-ns">
         <p class="">Brought to you by</p>
-        <a class="link near-black dib grow " href="https://yr.media">
+        <a class="link near-black dib grow" href="https://yr.media">
           <svg
             width="80"
             xmlns="http://www.w3.org/2000/svg"

@@ -25,7 +25,7 @@
           class="link db grow white no-underline ph2 pv2"
           target="_blank"
           rel="nofollow"
-          href="https://yr.media/search/foster+care"
+          href="https://yr.media/tag/foster-care/"
         >
           Our Foster Care Coverage
         </a>
@@ -40,9 +40,7 @@
           <div class="plyr__video-embed">
             <iframe
               class="db w-100"
-              :src="
-                `https://www.youtube-nocookie.com/embed/${videoid}?controls=0&iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1`
-              "
+              :src="`https://www.youtube-nocookie.com/embed/${videoid}?controls=0&iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1`"
               :data-poster="poster"
               frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -62,19 +60,11 @@
 import MainLogo from './MainLogo'
 
 export default {
-  components: {
-    MainLogo
-  },
+  components: { MainLogo },
   props: {
-    videoid: {
-      required: true,
-      type: String
-    },
-    poster: {
-      required: true,
-      type: String
-    }
-  }
+    videoid: { required: true, type: String },
+    poster: { required: true, type: String },
+  },
 }
 </script>
 

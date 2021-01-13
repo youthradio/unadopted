@@ -70,13 +70,13 @@ import Header from '~/components_local/Header'
 export default {
   components: {
     Footer,
-    Header
+    Header,
   },
   mixins: [CommonUtils],
   asyncData(ctx) {
     return {
       articleData: ArticleData.content[0],
-      postData: POSTCONFIG
+      postData: POSTCONFIG,
     }
   },
   data() {
@@ -90,10 +90,10 @@ export default {
       return new Date(date).toLocaleDateString(undefined, {
         year: 'numeric',
         month: 'long',
-        day: 'numeric'
+        day: 'numeric',
       })
-    }
-  }
+    },
+  },
 }
 </script>
 

@@ -19,8 +19,8 @@ module.exports = {
   docs: [
     {
       name: 'UNADOPTED - backend',
-      id: '1qUd17kRsC9iv2c2xJtY6qi487c-8MwlfqxoDKRBGmHc'
-    }
+      id: '1qUd17kRsC9iv2c2xJtY6qi487c-8MwlfqxoDKRBGmHc',
+    },
   ],
-  dataPath: 'data/data.json'
+  dataPath: 'data/data.json',
 }
