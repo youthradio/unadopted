@@ -15,7 +15,7 @@ export default {
         window.cancelAnimationFrame(this._mixingDebouceTimer)
       }
       this._mixingDebouceTimer = window.requestAnimationFrame(() =>
-        callback(event),
+        callback(event)
       )
     },
   },
